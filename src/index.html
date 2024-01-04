@@ -10,126 +10,144 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <title> Typescript Boilerplate </title>
+    <title> Payna - Payroll Experts </title>
 </head>
 <body>
-<section class="_body">
     
-    <div class="navbar">
-        <div class="navbar__logo">
-            <img src="assets/images/logo.svg" alt="">
-            <h2 class="navbar__title">Payna</h2>
-        </div>
-        <div class="navbar__nav-buttons only-pc">
-            <button class="borderless">Home</button>
-            <button class="borderless">Features</button>
-            <button class="borderless">Showcase</button>
-            <button class="borderless">Pricing</button>
-        </div>
-        <div class="navbar__btn-signin">
-            <button class="btn-sign-in">Sign In</button>
-        </div>
-    </div>
-    
-    <section class="main">
-        <div class="main__introduction">
-            <div class="introduction__top">
-                <div class="top__text">
-                    <h1>
-                        Manage Payroll Like an Expert
-                    </h1>
-                    <div class="text-general">
-                        Payna is helping you to setting up the payroll 
-                        without required any finance skills or knowledge before
-                    </div>
-                    <div class="top__btn-get-started">
-                        <button class="btn-get-started">Get Started</button>
-                    </div>
-                </div>
-                <img src="assets/images/UselessLady.svg" alt="" class="top-image">
-            </div>
-            <div class="introduction__bottom">
-                <div class="bottom__text">
-                    <h4>Trusted by Global Companies</h4>
-                </div>
-                <div class="bottom__wrap">
-                    <img src="assets/images/apple-11 1.svg" alt="">
-                    <img src="assets/images/adobe.svg" alt="">
-                    <img src="assets/images/slack-2 1.svg" alt="">
-                    <img src="assets/images/spotify-1 1.svg" alt="">
-                    <img src="assets/images/google-2015 1.svg" alt="">
-                </div>
-            </div>
-        </div>
+
+    <section class="content_body">
         
-        <div class="main__middle">
-            <div class="middle__texts">
-                <h4 class="red">WORK BETTER</h4>
-                <h2>For Your Business</h2>
-                <p class="text-general">We did research what your company needs and here we are providing all of them just for you</p>
+        <div class="navbar">
+            <div class="navbar__logo">
+                <img src="assets/images/logo.svg" alt="">
+                <div class="heading2" class="navbar__title">Payna</div>
             </div>
-            <div class="wrap spaced-row">
-                <div class="box-content">
-                    <img src="assets/images/briefcase.svg" alt="" class="content-icon">
-                    <div>
-                        <h4>Share Insights</h4>
-                        <p class="text-general">Working together with your team to make decisions</p>
-                    </div>
-                </div>
-                <div class="box-content">
-                    <img src="assets/images/offline.svg" alt="" class="content-icon">
-                    <div>
-                        <h4>Offline Mode</h4>
-                        <p class="text-general">Use the feature while off from internet? sure can</p>
-                    </div>
-                </div>
-                <div class="box-content">
-                    <img src="assets/images/Group 21 (1).svg" alt="" class="content-icon">
-                    <div>
-                        <h4>Kanban Mode</h4>
-                        <p class="text-general">Organize the report that easy to be understand</p>
-                    </div>
-                </div>
-                <div class="box-content">
-                    <img src="assets/images/arrow.svg" alt="" class="content-icon">
-                    <div>
-                        <h4>Track Leads</h4>
-                        <p class="text-general">See where your money goes and comes in business</p>
-                    </div>
-                </div>
-                <div class="box-content">
-                    <img src="assets/images/web.svg" alt="" class="content-icon">
-                    <div>
-                        <h4>189 Country</h4>
-                        <p class="text-general">Working together worldwide people from anywhere</p>
-                    </div>
-                </div>
-                <div class="box-content">
-                    <img src="assets/images/gift.svg" alt="" class="content-icon">
-                    <div>
-                        <h4>Reward System</h4>
-                        <p class="text-general">Motivate your team workingharder and receive a gift</p>
-                    </div>
-                </div>
+            <div class="navbar__nav-buttons only-pc">
+                <button class="borderless">Home</button>
+                <button class="borderless">Features</button>
+                <button class="borderless">Showcase</button>
+                <button class="borderless">Pricing</button>
             </div>
+            <div class="navbar__btn-signin">
+                <button class="btn-sign-in">Sign In</button>
+            </div>
+            <section class="burger-menu">
+                <div class="menu-bar" onclick="menuOnClcik()">
+                    <div class="bar" id="bar1"></div>
+                    <div class="bar" id="bar2"></div>
+                    <div class="bar" id="bar3"></div>
+                </div>
+                <div class="menu">
+                    <ul>
+                      <li class="menu-item"><a href="#">Home</a></li>
+                      <li class="menu-item"><a href="#">Features</a></li>
+                      <li class="menu-item"><a href="#">Showcase</a></li>
+                      <li class="menu-item"><a href="#">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="menu-bg"></div>
+            </section>
         </div>
-        
-        <div class="spaced-row">
-            <div>
-                <img src="assets/images/UselessLadies.svg" alt="">
-            </div>
-            <div>
-                <h4 class="red">SAVE MORE TIME</h4>
-                <h2>And Boost Productivity</h2>
-                <p>Your employees can bring any success into your business, so we need to take care of them</p>
-                <div>
-                    <input type="email">
-                    <button class="btn-get-started">Get Started</button>
+            
+        <section class="main">
+            <div class="main__introduction">
+                <div class="introduction__top">
+                    <div class="top__text">
+                        <h1>
+                            Manage Payroll Like an Expert
+                        </h1>
+                        <div class="text-general">
+                            Payna is helping you to setting up the payroll 
+                            without required any finance skills or knowledge before
+                        </div>
+                        <div class="top__btn-get-started">
+                            <button class="btn-top-get-started ">Get Started</button>
+                        </div>
+                    </div>
+                    <img src="assets/images/UselessLady.svg" alt="" class="top-image only-pc">
+                </div>
+                <div class="introduction__bottom">
+                    <div class="intro-bottom__text">
+                        <p class="heading4">Trusted by Global Companies</p>
+                    </div>
+                    <div class="bottom__wrap">
+                        <img src="assets/images/apple-11 1.svg" alt="">
+                        <img src="assets/images/adobe.svg" alt="">
+                        <img src="assets/images/slack-2 1.svg" alt="">
+                        <img src="assets/images/spotify-1 1.svg" alt="">
+                        <img src="assets/images/google-2015 1.svg" alt="">
+                    </div>
                 </div>
             </div>
-        </div>
+            
+            <div class="main__middle">
+                <div class="middle__texts">
+                    <div class="heading4 red">WORK BETTER</div>
+                    <div class="heading2">For Your Business</div>
+                    <div class="text-middle">We did research what your company needs and here we are providing all of them just for you</div>
+                </div>
+                <div class="wrap">
+                    <div class="box-content">
+                        <img src="assets/images/briefcase.svg" alt="" class="content-icon">
+                        <div>
+                            <div class="heading4">Share Insights</div>
+                            <div class="text-align-left">Working together with your team to make decisions</div>
+                        </div>
+                    </div>
+                    <div class="box-content">
+                        <img src="assets/images/offline.svg" alt="" class="content-icon">
+                        <div>
+                            <div class="heading4">Offline Mode</div>
+                            <div class="text-align-left">Use the feature while off from internet? sure can</div>
+                        </div>
+                    </div>
+                    <div class="box-content">
+                        <img src="assets/images/Group 21 (1).svg" alt="" class="content-icon">
+                        <div>
+                            <div class="heading4">Kanban Mode</div>
+                            <div class="text-align-left">Organize the report that easy to be understand</div>
+                        </div>
+                    </div>
+                    <div class="box-content">
+                        <img src="assets/images/arrow.svg" alt="" class="content-icon">
+                        <div>
+                            <div class="heading4">Track Leads</div>
+                            <div class="text-align-left">See where your money goes and comes in business</div>
+                        </div>
+                    </div>
+                    <div class="box-content">
+                        <img src="assets/images/web.svg" alt="" class="content-icon">
+                        <div>
+                            <div class="heading4">189 Country</div>
+                            <div class="text-align-left">Working together worldwide people from anywhere</div>
+                        </div>
+                    </div>
+                    <div class="box-content">
+                        <img src="assets/images/gift.svg" alt="" class="content-icon">
+                        <div>
+                            <div class="heading4">Reward System</div>
+                            <div class="text-align-left">Motivate your team working harder and receive a gift</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="main__outro">
+                <img src="assets/images/UselessLadies.svg" alt="" class="bottom-image">
+                <div class="outro__texts">
+                    <div class="outro-align">
+                        <div class="heading4 red">SAVE MORE TIME</div>
+                        <div class="heading2">And Boost Productivity</div>
+                        <div class="text-outro">Your employees can bring any success into your business, so we need to take care of them</div>
+                    </div>
+                    <form class="fixed-row">
+                        <input type="email" required placeholder="      Email Address" class="input-email">
+                        <button type="submit" class="btn-get-started ">Get Started</button>
+                    </form>
+                </div>
+            </div>
+        </section>
     </section>
-</section>
     <script src="/scripts.js"></script>
 </body>
 </html>
